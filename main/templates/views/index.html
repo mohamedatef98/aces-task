@@ -1,0 +1,36 @@
+{% extends 'statics/base.html' %}
+
+{% load static %}
+{% block body %}
+<div class="main-iframe__container">
+        <iframe width="426" height="240" src="https://www.youtube.com/embed/3mpyT2iNafw" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div class="main-item">
+        <img class="main-item__img" src="{% static 'images/logo.PNG' %}" alt="Logo">
+        <p class="main-item__info">
+            ACES stands for the Annual Conference for Engineering Students. ACES is a leading student organization in the engineering
+            community, it was first founded in 2004 in Faculty of Engineering Ain Shams University, to be the first student
+            activity in the governmental faculties in Egypt.
+        </p>
+    </div>
+    <div class="main-item">
+        <img class="main-item__img" src="{% static 'images/logo.PNG' %}" alt="Logo">
+        <p class="main-item__info">
+            ACES has started its journey aiming to have a community of influencial leaders; who can actually compete in the job market
+            and stand out of the crowd by giving them the opportunity to increase their capabilities technically as well
+            as non-technically and unleash their hidden potentials.
+        </p>
+    </div>
+    <div class="main-item">
+        <img class="main-item__img" src="{% static 'images/logo.PNG' %}" alt="Logo">
+        <p class="main-item__info">
+            Doing our best to pay forward such a Life Changing Experience and have our impact on the surrounding society hoping ACES
+            Journey will never come to an end..
+        </p>
+    </div>
+<script>
+    console.log('{{ willBeConsoled }}');
+</script>
+{% endblock %}
